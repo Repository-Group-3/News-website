@@ -72,8 +72,8 @@ ul {
   gap: 30px;
 }
 
-@media screen and (max-width:425px){
-    .wrapper grid{
+@media screen and (max-width:768px){
+    .grid{
         display: block;
     }
 }
@@ -103,6 +103,8 @@ img {
   word-wrap: break-word;
   max-width: 250px;
 }
+
+
 .feature__description {
   display: flex;
   flex-direction: column;
@@ -113,6 +115,26 @@ img {
   margin-top: 10px;
 }
 
+@media screen and(max-width:768px) {
+    .feature__headline{
+  flex: 1;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  word-wrap: break-word;
+   }
+ .feature__description{
+     display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+
+ }
+
+}
+    
 .feature__image {
   display: block;
   width: 100%;
