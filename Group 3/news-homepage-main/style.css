@@ -67,6 +67,12 @@ ul {
     gap: 30px
 }
 
+@media screen and (max-width:425px){
+    .wrapper grid{
+        display: block;
+    }
+}
+
 .feature{
     display: grid;
     gap: 1.5rem;
@@ -146,3 +152,4 @@ h1,h2,h3,p{
     font-size: 40px;
     font-weight: 700;
 }
+
