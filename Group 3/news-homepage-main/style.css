@@ -18,7 +18,8 @@ a {
   background-color: white;
   overflow: hidden;
   color: black;
-  font-family: inter, Arial, Helvetica, sans-serif;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
   
   /* display: flex;  */
 }
@@ -123,7 +124,8 @@ h2,
 h3,
 p {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  
 }
 
 .button {
@@ -136,8 +138,9 @@ p {
   padding: 15px;
   letter-spacing: 4px;
   justify-self: start;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   align-self: flex-end;
+  font-weight: 700;
 }
 
 .new {
@@ -192,7 +195,7 @@ p {
   gap: 20px;
   flex: 0 0 calc(33.33% - 20px);
   margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   color: #333;
 }
 .blog__image {
@@ -202,7 +205,7 @@ p {
   font-size: 40px;
   font-weight: 700;
   color: rgb(155, 149, 149);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 footer {
