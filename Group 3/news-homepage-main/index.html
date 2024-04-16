@@ -1,55 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Group 3 Project - News homepage</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Group 3 Project - News homepage</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header wrapper">
+      <a class="header_img">
+        <img src="./assets/images/logo.svg" class="header__logo" />
+      </a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">New</a></li>
+          <li><a href="index.html">Popular</a></li>
+          <li><a href="index.html">Trending</a></li>
+          <li><a href="index.html">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <main>
+      <article class="wrapper grid">
+        <section class="feature">
+          <picture class="feature__picture">
+            <img
+              src="./assets/images/image-web-3-desktop.jpg"
+              class="feature__image"
+            />
+            <h1 class="feature__headline" style="font-size: 50px">
+              The Bright Future of Web 3.0?
+            </h1>
+            <div class="feature__description">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <br />
+              <a class="button" href="">Read more</a>
+            </div>
+          </picture>
+        </section>
 
-  The Bright Future of Web 3.0?
+        <section class="new">
+          <h2 class="new_title" style="font-size: 40px">New</h2>
+          <br />
+          <article class="new__post">
+            <h3 class="headline">
+              <p>Hydrogen VS Electric Cars</p>
+              <br />
+            </h3>
+            <p class="parastyle">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+            <br />
+          </article>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+          <article class="new__post">
+            <h3 class="headline">
+              <p>The Downsides of AI Artistry</p>
+              <br />
+            </h3>
+            <p class="parastyle">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+          <article class="new__post">
+            <h3 class="headline">
+              <p>Is VC Funding Drying Up?</p>
+              <br />
+            </h3>
+            <p class="parastyle">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </section>
 
-  Read more
+        <section class="blog">
+          <article class="blog__item">
+            <img
+              class="blog__image"
+              src="./assets/images/image-retro-pcs.jpg"
+            />
+            <div class="blog__number">01</div>
+            <h3 class="blog__headline">Reviving Retro PCs</h3>
+            <p class="blog__description">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </article>
+          <article class="blog__item">
+            <img
+              class="blog__image"
+              src="./assets/images/image-top-laptops.jpg"
+            />
+            <div class="blog__number">02</div>
+            <h3 class="blog__headline">Top 10 Laptops of 2022</h3>
+            <p class="blog__description">
+              Our best picks for various needs and budgets.
+            </p>
+          </article>
+          <article class="blog__item">
+            <img
+              class="blog__image"
+              src="./assets/images/image-gaming-growth.jpg"
+            />
+            <div class="blog__number">03</div>
+            <h3 class="blog__headline">The Growth of Gaming</h3>
+            <p class="blog__description">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </article>
+        </section>
+      </article>
+    </main>
 
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <!-- Project credits -->
-  <footer>
-    <div class="attribution">
-      Challenge prepared by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name(s) Here</a>.
-    </div>
-  </footer>
-</body>
+    <!-- Project credits -->
+    <footer>
+      <div class="attribution">
+        Challenge prepared by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name(s) Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>
