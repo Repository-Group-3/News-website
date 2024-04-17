@@ -65,7 +65,7 @@ ul {
 }
 
 .grid {
-  display: flex;
+  display: grid;
   gap: 4rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 18.75rem auto auto;
@@ -73,22 +73,24 @@ ul {
 }
 
 img {
-  display: flex;
-  max-width: 100%;
+  display: block  ;
+  width: 100%;
   height: auto;
-  align-items: center;
+  overflow: clip;
 }
 .feature {
-  display: flex;
+  display: grid;
   grid-column: 1/3;
   grid-row: 1/3;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 1.875rem
 }
+.feature__description a{
+  margin-block-end: 1.875;
+}
+
+
 .feature__headline {
   flex: 1;
   display: inline-block;
@@ -97,7 +99,16 @@ img {
   word-wrap: break-word;
   max-width: 250px;
 }
+div{
+  display: block;
+  unicode-bidi: isolate;
+  box-sizing: inherit;
+}
+
 .feature__description {
+  margin-top: 20px;
+  
+  /*
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -105,15 +116,17 @@ img {
   gap: 10px;
   margin-left: 260px;
   margin-top: 10px;
-}
+*/
 
+}
 .feature__image {
-  display: block;
+  display: flex;
   width: 100%;
   height: auto;
 }
 .feature__picture {
   grid-column: 1/3;
+  box-sizing: inherit;
 }
 
 h1,
@@ -122,6 +135,7 @@ h3,
 p {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.1;
 }
 
 .button {
@@ -136,14 +150,16 @@ p {
   justify-self: start;
   font-family: Arial, Helvetica, sans-serif;
   align-self: flex-end;
+  margin-top: 20px  ;
 }
 
 .new {
+  grid-column: 3/4;
+  grid-row: 1/3;
   background-color: rgb(21, 12, 32);
-  padding: 40px;
+  padding: 1.5rem;
   color: rgb(255, 242, 0);
-  align-items: stretch;
-}
+  }
 .new_title {
   padding-bottom: 10px;
   color: hsl(35, 77%, 62%);
@@ -172,6 +188,14 @@ p {
 }
 
 .blog {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1/ -1;
+  padding-block-start: 2.5rem;
+  gap: 1.875rem;
+
+  
+  /*
   display: flex;
   gap: 30px;
   position: absolute;
@@ -181,7 +205,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 20px;*/
 }
 .blog__item {
   display: grid;
@@ -197,6 +221,7 @@ p {
   grid-row: 1 / 4;
 }
 .blog__number {
+  line-height: 1;
   font-size: 40px;
   font-weight: 700;
   color: rgb(155, 149, 149);
@@ -208,7 +233,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  /*background-color: #333;*/
   color: white;
   text-align: center;
   padding: 20px 0;
