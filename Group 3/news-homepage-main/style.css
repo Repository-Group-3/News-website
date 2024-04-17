@@ -9,6 +9,11 @@ main {
 a {
   text-decoration: none;
 }
+.newhov {
+text-decoration: none;
+color: aliceblue;
+}
+
 /* Updated the nav bar, set to horizontal position... */
 .header_img {
   position: absolute;
@@ -51,8 +56,13 @@ a {
 .nav-list li a:hover {
   /* background-color: whitesmoke; */
   color: hsl(35, 77%, 62%);
+  
 }
 
+.newhov :hover{
+  color: hsl(35, 77%, 62%);
+
+}
 li {
   list-style-type: none;
 }
