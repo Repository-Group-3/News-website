@@ -19,10 +19,10 @@
       <a class="header_img">
         <img src="./assets/images/logo.svg" class="header__logo" />
       </a>
-      <button id="openMenu">&#9776;</button>
+      <!-- <button id="openMenu">&#9776;</button> -->
       <nav class="navbar">
         <ul class="nav-list">
-          <button id="closeMenu">X</button>
+          <!-- <button id="closeMenu">X</button> -->
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html">New</a></li>
           <li><a href="index.html">Popular</a></li>
@@ -30,6 +30,35 @@
           <li><a href="index.html">Categories</a></li>
         </ul>
       </nav>
+
+      <div class="menu_div">
+        <img
+          src="./assets/images/icon-menu.svg"
+          class="header_menu_icon"
+          alt="header_menu_logo"
+          onclick="openMobileMenu()"
+        />
+      </div>
+
+      <div id="overlay"></div>
+
+      <div id="menu">
+        <img
+          src="./assets/images/icon-menu-close.svg"
+          alt="header_menu_logo"
+          class="header_menu_icon_close"
+          onclick="closeMobileMenu()"
+        />
+        <nav class="mobile-navbar">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">New</a></li>
+            <li><a href="index.html">Popular</a></li>
+            <li><a href="index.html">Trending</a></li>
+            <li><a href="index.html">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
