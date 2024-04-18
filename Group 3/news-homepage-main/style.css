@@ -310,6 +310,8 @@ footer {
   }
   .feature__headline{
     max-width: none;
+    font-size: 40px;
+
   }
    #openMenu, #closeMenu {
 display: block;
@@ -343,6 +345,10 @@ top: 15px;
   .feature__image{
     height: 150px;
   }
+}
 
-
+@media only screen and (max-width:320px){
+.feature__headline{
+  font-size: 30px;
+}
 }
