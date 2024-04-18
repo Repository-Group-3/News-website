@@ -101,6 +101,13 @@ ul {
   gap: 30px;
 }
 
+@media only screen and (max-width:768px) {
+ .grid{
+    display: block;
+    
+  }
+}
+
 img {
   display: block;
   width: 100%;
