@@ -310,7 +310,7 @@ footer {
 }
 
 .mobile-navbar {
-  padding-top: 50px;
+  padding-top: 130px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -332,6 +332,7 @@ footer {
 }
 .mobile-nav-list li {
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .mobile-nav-list li:last-child {
@@ -340,7 +341,7 @@ footer {
 
 .mobile-nav-list li a {
   display: block;
-  color: navy;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 10px 20px;
 }
@@ -350,11 +351,13 @@ footer {
 }
 
 .header_menu_icon_close {
-  display: block;
-  width: 30px;
-  height: 30px;
+  display: flex;
+  width: 33px;
+  height: 33px;
   float: right;
   text-align: right;
+  padding-right: 20px;
+  padding-top: 25px;
 }
 
 /* mobile small nav and small img in header default settings end  */
@@ -427,13 +430,13 @@ footer {
   #menu.active {
     display: flex;
     position: fixed;
-    top: 20px;
+    top: 0px;
     right: 0px;
     z-index: 10;
     background-color: white;
     float: right;
-    width: 60%;
-    height: 400px;
+    width: 68%;
+    height: 800px;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
