@@ -261,6 +261,7 @@ p {
 
 .blog__headline {
   text-decoration: none;
+  cursor: pointer;
 }
 
 
